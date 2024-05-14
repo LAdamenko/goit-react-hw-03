@@ -1,13 +1,14 @@
 .container {
   border: 1px solid black;
   border-radius: 4px;
-  padding: 4px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
 }
 
-.name {
-  margin: 0;
+.myIcon {
+  vertical-align: middle;
+  margin-right: 8px;
 }

@@ -4,3 +4,12 @@
   padding: 2em;
   text-align: left;
 }
+
+.title {
+  margin-bottom: 40px;
+}
+
+.container {
+  margin-top: 40px;
+  margin-left: 40px;
+}

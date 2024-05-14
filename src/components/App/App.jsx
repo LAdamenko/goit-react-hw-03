@@ -3,7 +3,7 @@ import SearchBox from '../SearchBox/SearchBox';
 import ContactList from '../ContactList/ContactList';
 import contactsData from '../../contactsData.json';
 import { useState, useEffect } from 'react';
-// import css from './App.module.css';
+import css from './App.module.css';
 
 export default function App() {
   const [contacts, setContacts] = useState(() => {
@@ -36,8 +36,8 @@ export default function App() {
     contact.name.toLowerCase().includes(search.toLowerCase())
   );
   return (
-    <div>
-      <h1>Phonebook</h1>
+    <div className={css.container}>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm onAdd={addContact} />
       <SearchBox value={search} onSearch={setSearch} />
       <ContactList contacts={visibleContacts} onDelete={deleteContact} />
